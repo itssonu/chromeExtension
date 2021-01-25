@@ -1,0 +1,81 @@
+redirect url = http://dev.01s.in/MsgPush/public/api/linkedin/auth
+encoded url = http%3A%2F%2Fdev.01s.in%2FMsgPush%2Fpublic%2Fapi%2Flinkedin%2Fauth
+client id = 77i2ee96xh23b0
+client secret = QD3XlNcWzhfbIOId
+
+
+
+https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=01synergy&scope=r_liteprofile%20r_emailaddress%20w_member_social&client_id=77i2ee96xh23b0&redirect_uri=http%3A%2F%2Fdev.01s.in%2FMsgPush%2Fpublic%2Fapi%2Flinkedin%2Fauth
+
+
+
+
+code =   AQTpqilCpcCT1cgVEdmcrt857ZYqTc-BNNQ1P95hpeLStw1b17bs7TwGi7bzXSu3xFTaZ1GTfjQT4AgXSW0OnWGNcCDGzGnrTSoPeT_IrbiU4XlhTRugXOgZyTAYwBlz8KJjXn9H7D_J4VEZPydRXsx6aXVhwKKdhnIORlmkd0GKDrALospLbcS8StyL0g
+
+
+
+
+
+curl -ik -X POST https://www.linkedin.com/oauth/v2/accessToken \
+-d grant_type=authorization_code \
+-d code=AQTpqilCpcCT1cgVEdmcrt857ZYqTc-BNNQ1P95hpeLStw1b17bs7TwGi7bzXSu3xFTaZ1GTfjQT4AgXSW0OnWGNcCDGzGnrTSoPeT_IrbiU4XlhTRugXOgZyTAYwBlz8KJjXn9H7D_J4VEZPydRXsx6aXVhwKKdhnIORlmkd0GKDrALospLbcS8StyL0g \
+-d redirect_uri=http%3A%2F%2Fdev.01s.in%2FMsgPush%2Fpublic%2Fapi%2Flinkedin%2Fauth \
+-d client_id=77i2ee96xh23b0 \
+-d client_secret=QD3XlNcWzhfbIOId
+
+
+
+
+
+
+{
+    "access_token": "AQUMOXhjEBkpv7r7ue09PpKii5j27wJ5KzOqDx2ej9T-xZM_tdz6woCK6fI_VnvhtRlngKGbpAtB4qRUc-Hp-Jdr9hxazbInkTCDycBz_aEhcSuXoQVaLwn3Noy3apQqmIngdVIuOu0I4_cZbeMuXgmFU30yladN_hamYq433gPq3pfr3l4YKEuoe-GQtI4_rmrhLGqVYVn1xHA-HlXmapPw9AMBul0Xv978-hEyHnTUg0TxkXamH_1NhswHpBvCseLgCq75OiZLC_hZOce_-JuRUpzigzJJ_U45uxtLEaRGb4flxmQ1nricK4cnGMsmPoKNkxaS43fCZYL3TP9PtjQP6HxKAw",
+    "expires_in": 5183999
+}
+
+
+
+access_token = AQUMOXhjEBkpv7r7ue09PpKii5j27wJ5KzOqDx2ej9T-xZM_tdz6woCK6fI_VnvhtRlngKGbpAtB4qRUc-Hp-Jdr9hxazbInkTCDycBz_aEhcSuXoQVaLwn3Noy3apQqmIngdVIuOu0I4_cZbeMuXgmFU30yladN_hamYq433gPq3pfr3l4YKEuoe-GQtI4_rmrhLGqVYVn1xHA-HlXmapPw9AMBul0Xv978-hEyHnTUg0TxkXamH_1NhswHpBvCseLgCq75OiZLC_hZOce_-JuRUpzigzJJ_U45uxtLEaRGb4flxmQ1nricK4cnGMsmPoKNkxaS43fCZYL3TP9PtjQP6HxKAw
+
+
+
+curl https://api.linkedin.com/v2/me -H "Authorization:Bearer AQUMOXhjEBkpv7r7ue09PpKii5j27wJ5KzOqDx2ej9T-xZM_tdz6woCK6fI_VnvhtRlngKGbpAtB4qRUc-Hp-Jdr9hxazbInkTCDycBz_aEhcSuXoQVaLwn3Noy3apQqmIngdVIuOu0I4_cZbeMuXgmFU30yladN_hamYq433gPq3pfr3l4YKEuoe-GQtI4_rmrhLGqVYVn1xHA-HlXmapPw9AMBul0Xv978-hEyHnTUg0TxkXamH_1NhswHpBvCseLgCq75OiZLC_hZOce_-JuRUpzigzJJ_U45uxtLEaRGb4flxmQ1nricK4cnGMsmPoKNkxaS43fCZYL3TP9PtjQP6HxKAw"
+
+
+
+
+
+{
+    "localizedLastName": "Gupta",
+    "profilePicture": {
+        "displayImage": "urn:li:digitalmediaAsset:C4E03AQEyHN49YsBVvg"
+    },
+    "firstName": {
+        "localized": {
+            "en_US": "Sonu"
+        },
+        "preferredLocale": {
+            "country": "US",
+            "language": "en"
+        }
+    },
+    "lastName": {
+        "localized": {
+            "en_US": "Gupta"
+        },
+        "preferredLocale": {
+            "country": "US",
+            "language": "en"
+        }
+    },
+    "id": "oB8eflgh0d",
+    "localizedFirstName": "Sonu"
+}
+
+
+
+
+
+apis 
+
+https://api.linkedin.com/v2/me
