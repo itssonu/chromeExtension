@@ -8,12 +8,16 @@
 // var a = "sonu";
 // Array.from(document.getElementsByTagName("h2")).map((h) => h.innerHTML);
 var coords;
-var a = window.addEventListener("click", function (event) {
+
+window.addEventListener("click", function (event) {
   var x = event.clientX;
   var y = event.clientY;
   var coords = "Custom Screen Resolution: " + x + "*" + y + "px";
+  alert(coords);
+  return coords;
 });
-coords;
+
+alert(coords);
 // a;
 // alert(a);
 
