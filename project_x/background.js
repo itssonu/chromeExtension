@@ -1,5 +1,10 @@
 chrome.runtime.onInstalled.addListener(function () {
-  chrome.storage.sync.set({ color: "#3aa757" }, function () {
-    console.log("The color is green.");
+  window.addEventListener("click", function (event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = coords;
+    alert(coords);
+    console.log(coords);
   });
 });
