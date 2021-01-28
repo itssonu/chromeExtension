@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Build an Extension!",
 
-  "permissions": ["storage", "activeTab", "windows"],
+  "permissions": ["storage", "activeTab", "windows", "tabs"],
   "action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
